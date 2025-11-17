@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sql",
+            "group": "sql",
+            "database": "${workspaceFolder:sqlite_coding_challenge}/bais_sqlite_lab.db"
+        }
+    ]
+}
