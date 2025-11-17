@@ -47,3 +47,13 @@ JOIN (
     ON dept_avg.department_id = e.department_id
 WHERE e.salary > dept_avg.avg_salary
 ORDER BY department_name, employee_salary DESC;
+
+--Task 4
+
+SELECT
+    city,
+    COUNT(*) AS gold_customer_count
+FROM customers
+WHERE loyalty_level = 'Gold'
+GROUP BY city
+ORDER BY gold_customer_count DESC, city;
